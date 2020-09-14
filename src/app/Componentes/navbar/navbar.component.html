@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark default-color">
+  <a class="navbar-brand" href="#"><i class="fas fa-book-open"></i> TuBlog</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pestañas" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="pestañas">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link icono-blanco" [routerLink]="['/home', usuario.id]">Inicio</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" [routerLink]="['/perfil', usuario.id]">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/publicaciones', usuario.id]">Mis Publicaciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Bloggers seguidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Salir</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+
+      <form class="form-inline my-1">
+        <div class="md-form form-sm my-0">
+          <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Buscar"
+            aria-label="Search">
+        </div>
+        <a class="nav-link" href="buscador"><i class="fas fa-search icono-blanco"></i></a>
+      </form>
+
+    </ul>
+  </div>
+</nav>

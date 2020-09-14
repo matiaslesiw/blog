@@ -1,0 +1,33 @@
+.circle {
+  width: 280px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left:18%;
+  overflow:hidden;
+}
+
+.posteo-nuevo {
+  background-color:white;
+  outline: 10px solid #00695c;
+}
+.text-color{
+  color: #00695c;
+
+}
+
+.mejor-posteo {
+  background-color:#2BBBAD;
+  outline: 10px solid #00695c;
+  color: white;
+}
+
+.ver-perfil{
+  font-size:16px;
+  color:#00695c;
+  outline: 5px solid #00695c;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+

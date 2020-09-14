@@ -1,0 +1,14 @@
+.tarjeta {
+  max-width: 400px;
+  height: 470px;
+
+}
+
+.agrandar:hover
+{
+ transform: scale(1.1);
+}
+
+img {
+  height: 250px;
+}

@@ -1,0 +1,13 @@
+.mejor-posteo {
+  background-color:#2BBBAD;
+  outline: 10px solid #00695c;
+  color: white;
+}
+
+.lapiz{
+  color:#2BBBAD;
+}
+
+button:hover{
+  opacity: 0.8;
+}

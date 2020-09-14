@@ -1,0 +1,77 @@
+
+.imagen {
+
+  transition: transform .8s;
+  background-color:#00695c;
+}
+
+.imagen:hover
+{
+ transform: scale(1.01);
+}
+
+.agrandar:hover
+{
+ transition: transform .8s;
+ transform: scale(1.35);
+}
+
+h2 {
+  background-color:#00695c;
+  color:white;
+}
+
+.footer {
+  background:#2BBBAD;
+  color:white;
+}
+
+.margen {
+  padding:50px;
+
+}
+
+.card-perfil {
+  color:white;
+  background:#00695c;
+}
+
+.boton-blanco  {
+  background:white;
+  color: #2BBBAD;
+  outline: 3px solid #2BBBAD;
+
+}
+
+.boton-blanco:hover  {
+
+  opacity:0.8;
+}
+
+.ver-perfil {
+  width:90%;
+  height:375px;
+  background: url('https://static3.abc.es/media/deportes/2020/08/17/leomessi-ksqF--620x349@abc.jpg') no-repeat center center/cover;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:flex-end;
+  color:black;
+  outline: 5px solid #2BBBAD;
+  align-content: inherit;
+
+
+}
+
+.margen {
+  margin-top:50px;
+}
+
+.borde {
+  outline: 10px outset white;
+  margin:5px;
+}
+
+.margen-seguir {
+  padding:15px;
+}

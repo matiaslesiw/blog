@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<br><br>
+<div class="container">
+  <app-nuevo-posteo></app-nuevo-posteo>
+  <br><br>
+  <app-perfil-destacado [perfil]="unPerfilDestacado()"></app-perfil-destacado>
+  <br><br>
+  <app-mejor-posteo [posteo]="unPosteoDestacado()"></app-mejor-posteo>
+
+  <div *ngFor="let fila of filas; let i = index;">
+
+    <div class="row">
+
+      <div class="col-sm margen">
+        <app-posteo [posteo]="unPosteo(fila)"></app-posteo>
+      </div>
+      <div class="col-sm margen">
+        <app-posteo [posteo]="unPosteo(fila+1)"></app-posteo>
+      </div>
+      <div class="col-sm margen">
+        <app-posteo [posteo]="unPosteo(fila+2)"></app-posteo>
+      </div>
+
+    </div>
+  </div>
+</div>
+<br><br><br><br>

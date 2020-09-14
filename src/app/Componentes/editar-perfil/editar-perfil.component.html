@@ -1,0 +1,69 @@
+<div class="card posteo-nuevo">
+    <div class="card-body">
+      <form>
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" [(ngModel)]="perfil.nombre"  [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputApellido">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" [(ngModel)]="perfil.apellido"  [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputUsuario">Usuario</label>
+            <input type="text" class="form-control" id="inputUsuario" placeholder="Usuario" [(ngModel)]="perfil.nombreUsuario"  [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputNombre">Contraseña</label>
+            <input type="password" class="form-control" id="inputPsw" placeholder="Contraseña" [(ngModel)]="perfil.contra"  [ngModelOptions]="{standalone: true}">
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" [(ngModel)]="perfil.email"  [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputFechaNacimiento">Fecha Nacimiento</label>
+            <input type="date" class="form-control" id="inputFechaNacimiento" [(ngModel)]="perfil.fechaNacimiento"  [ngModelOptions]="{standalone: true}">
+          </div>
+
+        </div>
+        <div class="form-row">
+        <label for="validationTextarea">Una breve descripción de su persona</label>
+          <textarea class="form-control" rows="10" cols="40" id="validationTextarea" placeholder="Agregue una descripción de su perfil" [(ngModel)]="perfil.descPerfil"  [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+        <br>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01"
+              aria-describedby="inputGroupFileAddon01">
+            <label class="custom-file-label" for="inputGroupFile01">Eleji una foto</label>
+          </div>
+        </div>
+
+        <div class="form-group col-md-6 text-right">
+          <button type="submit" class="btn btn-default btn-lg">Guardar Cambios</button>
+        </div>
+
+      </div>
+
+
+      </form>
+    </div>
+  </div>

@@ -183,6 +183,10 @@ export class MockServiceService {
     return this.getUsuarios().find((usuario) => { return usuario.nombreUsuario == nombre })
   }
 
+  posteosPorIdUsuario(idUsuario: number) {
+    return this.getPosteos().filter((posteo)=>{return posteo.usuario == idUsuario})
+  }
+
 
 
 }

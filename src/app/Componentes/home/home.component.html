@@ -12,13 +12,13 @@
     <div class="row">
 
       <div class="col-sm margen">
-        <app-posteo [posteo]="unPosteo(fila)"></app-posteo>
+        <app-posteo [posteo]="unPosteo(fila)" *ngIf="existePosteo(fila)"></app-posteo>
       </div>
       <div class="col-sm margen">
-        <app-posteo [posteo]="unPosteo(fila+1)"></app-posteo>
+        <app-posteo [posteo]="unPosteo(fila+1)" *ngIf="existePosteo(fila+1)"></app-posteo>
       </div>
       <div class="col-sm margen">
-        <app-posteo [posteo]="unPosteo(fila+2)"></app-posteo>
+        <app-posteo [posteo]="unPosteo(fila+2)" *ngIf="existePosteo(fila+2)"></app-posteo>
       </div>
 
     </div>

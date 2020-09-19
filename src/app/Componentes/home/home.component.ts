@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   usuarios: Usuario[];
   posteos: Posteo[];
-  filas: number[] = [0 ,3 ,6];
+  filas: number[] = [0 ,3 ,6]; // esta para saber cuantos posteos quiero por fila
   usuarioLogueado: Usuario;
 
 
@@ -45,6 +45,11 @@ export class HomeComponent implements OnInit {
     return this.posteos[Math.floor(Math.random() * this.posteos.length)];
   }
 
+  existePosteo(fila) {
+    if (this.posteos[fila] !== undefined) {
+      return true
+    } else return false
+  }
 
 
 

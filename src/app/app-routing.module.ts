@@ -13,6 +13,7 @@ import { EditarPerfilComponent } from './Componentes/editar-perfil/editar-perfil
 import { PublicacionComponent } from './Componentes/publicacion/publicacion.component';
 import { BuscadorComponent } from './Componentes/buscador/buscador.component';
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
+import { SeguidosComponent } from './Componentes/seguidos/seguidos.component';
 
 export const routes: Routes = [
   { path: "login", component: LoginComponent },
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: "publicaciones/:id", component: MisPublicacionesComponent },
   { path: "publicacion", component: PublicacionComponent},
   { path: "buscador", component: BuscadorComponent},
+  { path: "seguidos/:id", component: SeguidosComponent},
   { path: "**", redirectTo: "/login", pathMatch: "full" },
 ];
 
@@ -45,5 +47,6 @@ export const routingComponents = [
   PublicacionComponent,
   BuscadorComponent,
   NavbarComponent,
+  SeguidosComponent
 
 ];

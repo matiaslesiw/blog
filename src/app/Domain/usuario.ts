@@ -9,7 +9,7 @@ export class Usuario {
   fechaNacimiento: any;
   descPerfil: string;
   img: string;
-  idSeguidos: string[];
+  idSeguidos: number[];
 
   constructor(
     _id?: number,
@@ -21,7 +21,7 @@ export class Usuario {
     _fechaNacimiento?: any,
     _descPerfil?: string,
     _img?: string,
-    _seguidos?: string[]) {
+    _seguidos?: number[]) {
 
     this.id=_id;
     this.nombre=_nombre;

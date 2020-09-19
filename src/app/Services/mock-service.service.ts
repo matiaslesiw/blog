@@ -184,7 +184,18 @@ export class MockServiceService {
   }
 
   posteosPorIdUsuario(idUsuario: number) {
-    return this.getPosteos().filter((posteo)=>{return posteo.usuario == idUsuario})
+    return this.getPosteos().filter((posteo) => { return posteo.usuario == idUsuario })
+  }
+
+  usuariosSeguidos(usuarioLogueado: Usuario): Usuario[] {
+    return this.getUsuarios().filter((usuario) => {
+
+      for (var i = 0;i < usuarioLogueado.idSeguidos.length;i++) {
+
+        return usuarioLogueado.idSeguidos[i] == usuario.id
+      }
+
+    })
   }
 
 

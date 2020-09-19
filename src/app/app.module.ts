@@ -19,6 +19,7 @@ import { BuscadorComponent } from './Componentes/buscador/buscador.component';
 import { MockServiceService } from './Services/mock-service.service';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
+import { SeguidosComponent } from './Componentes/seguidos/seguidos.component';
 
 const appRoutes: Routes = [
   { path: "", component: LoginComponent },
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     PerfilComponent,
     PublicacionComponent,
     BuscadorComponent,
-    NavbarComponent
+    NavbarComponent,
+    SeguidosComponent
    ],
   imports: [
     BrowserModule,
